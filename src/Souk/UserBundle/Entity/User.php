@@ -1,5 +1,4 @@
 <?php
-// src/AppBundle/Entity/User.php
 
 namespace Souk\UserBundle\Entity;
 
@@ -19,8 +18,9 @@ class User extends BaseUser
      */
     protected $id;
     /**
-     * @ORM\Column(type="string",length=255)
+     * @var string
      *
+     * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
     /**
@@ -28,7 +28,25 @@ class User extends BaseUser
      *
      */
     private $prenom;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    private $adresse;
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="mobile", type="integer", length=255)
+     */
+    private $mobile;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=255)
+     */
+    private $titre_commercial;
 
     public function __construct()
     {
@@ -66,6 +84,54 @@ class User extends BaseUser
     public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+
+    /**
+     * @param mixed $adresse
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMobile()
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param mixed $mobile
+     */
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitreCommercial()
+    {
+        return $this->titre_commercial;
+    }
+
+    /**
+     * @param string $titre_commercial
+     */
+    public function setTitreCommercial($titre_commercial)
+    {
+        $this->titre_commercial = $titre_commercial;
     }
 
 

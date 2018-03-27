@@ -8,15 +8,15 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Registration:register.html.twig", 1);
+        $this->parent = $this->loadTemplate("UserBundle::layout.html.twig", "FOSUserBundle:Registration:register.html.twig", 1);
         $this->blocks = array(
-            'fos_user_content' => array($this, 'block_fos_user_content'),
+            'formulaire' => array($this, 'block_formulaire'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "@FOSUser/layout.html.twig";
+        return "UserBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -24,11 +24,54 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 3
-    public function block_fos_user_content($context, array $blocks = array())
+    // line 4
+    public function block_formulaire($context, array $blocks = array())
     {
-        // line 4
-        $this->loadTemplate("@FOSUser/Registration/register_content.html.twig", "FOSUserBundle:Registration:register.html.twig", 4)->display($context);
+        // line 5
+        echo "    <script>
+        \$(document).ready(function() {
+            \$('select').removeAttr('multiple');
+            \$('.login-right div:nth-child(7)').css('display','none');
+            \$('select').on('change', function() {
+                if(this.val()=='ROLE_COM'){
+                    \$('.login-right div:nth-child(7)').css('display','block');
+                }else{
+                    \$('.login-right div:nth-child(7)').css('display','none');
+                }
+            });
+
+        });
+    </script>
+    <style>
+        .login-right div{width:50%!important;float:left;}
+        .login-right div:last-child{width:100%!important;}
+        .login-right div:first-child{width:100%!important;}
+    </style>
+<div class=\"col-md-12 login-right\">
+
+
+    ";
+        // line 27
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? null), 'form_start', array("method" => "post", "action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_registration_register"), "attr" => array("class" => "fos_user_registration_register")));
+        echo "
+    ";
+        // line 28
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["form"] ?? null), 'widget');
+        echo "
+    <br/>
+    <div>
+        <input type=\"submit\" value=\"";
+        // line 31
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("registration.submit", array(), "FOSUserBundle"), "html", null, true);
+        echo "\" />
+    </div>
+    ";
+        // line 33
+        echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? null), 'form_end');
+        echo "
+</div>
+
+";
     }
 
     public function getTemplateName()
@@ -43,7 +86,7 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,  11 => 1,);
+        return array (  70 => 33,  65 => 31,  59 => 28,  55 => 27,  31 => 5,  28 => 4,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

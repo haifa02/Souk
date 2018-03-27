@@ -41,46 +41,45 @@ class __TwigTemplate_7f0d2038cdb209e92fae6910f81d77f2c038164d915a7a17b0bbc145ceb
         // line 9
         echo "    <div class=\"col-md-6 login-right\">
         <h3>Connexion Membres</h3>
-        <p>If you have an account with us, please log in.</p>
         <form action=\"";
-        // line 12
+        // line 11
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_check");
         echo "\" method=\"post\">
             ";
-        // line 13
+        // line 12
         if (($context["csrf_token"] ?? null)) {
-            // line 14
+            // line 13
             echo "                <input type=\"hidden\" name=\"_csrf_token\" value=\"";
             echo twig_escape_filter($this->env, ($context["csrf_token"] ?? null), "html", null, true);
             echo "\" />
             ";
         }
-        // line 16
+        // line 15
         echo "            <div>
                 <span for=\"username\">";
-        // line 17
+        // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
         echo "<label>*</label></span>
                 <input class=\"login_input\" type=\"text\" id=\"username\" name=\"_username\" value=\"";
-        // line 18
+        // line 17
         echo twig_escape_filter($this->env, ($context["last_username"] ?? null), "html", null, true);
         echo "\" required=\"required\" autocomplete=\"username\">
             </div>
             <div>
                 <span for=\"password\">";
-        // line 21
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
         echo "<label>*</label></span>
                 <input class=\"login_input\" type=\"password\" id=\"password\" name=\"_password\" required=\"required\" autocomplete=\"current-password\">
             </div>
             <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
             <label for=\"remember_me\">";
-        // line 25
+        // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
         echo "</label>
             </br>
             <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 27
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
         </form>
@@ -102,7 +101,7 @@ class __TwigTemplate_7f0d2038cdb209e92fae6910f81d77f2c038164d915a7a17b0bbc145ceb
 
     public function getDebugInfo()
     {
-        return array (  84 => 27,  79 => 25,  72 => 21,  66 => 18,  62 => 17,  59 => 16,  53 => 14,  51 => 13,  47 => 12,  42 => 9,  36 => 7,  34 => 6,  31 => 5,  28 => 4,  11 => 1,);
+        return array (  83 => 26,  78 => 24,  71 => 20,  65 => 17,  61 => 16,  58 => 15,  52 => 13,  50 => 12,  46 => 11,  42 => 9,  36 => 7,  34 => 6,  31 => 5,  28 => 4,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

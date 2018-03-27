@@ -142,7 +142,4 @@
   'UserBundle:Security:login_content.html.twig' => __DIR__.'/../../../src/Souk/UserBundle/Resources/views/Security/login_content.html.twig',
   'BackBundle::panel.html.twig' => __DIR__.'/../../../src/Souk/BackBundle/Resources/views/panel.html.twig',
   'BackBundle:admin:home.html.twig' => __DIR__.'/../../../src/Souk/BackBundle/Resources/views/admin/home.html.twig',
-  '::panel.html.twig' => __DIR__.'/../../../app/Resources/views/panel.html.twig',
-  '::base.html.twig' => __DIR__.'/../../../app/Resources/views/base.html.twig',
-  '::login.html.twig' => __DIR__.'/../../../app/Resources/views/login.html.twig',
 );

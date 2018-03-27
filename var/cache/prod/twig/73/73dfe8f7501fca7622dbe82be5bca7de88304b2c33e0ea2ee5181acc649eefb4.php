@@ -8,7 +8,7 @@ class __TwigTemplate_3c2fcb3fa54d98ec487564f70e40659be6b07719be1f1ac77c7d4452e08
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("panel.html.twig", "BackBundle:admin:home.html.twig", 1);
+        $this->parent = $this->loadTemplate("BackBundle::panel.html.twig", "BackBundle:admin:home.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_3c2fcb3fa54d98ec487564f70e40659be6b07719be1f1ac77c7d4452e08
 
     protected function doGetParent(array $context)
     {
-        return "panel.html.twig";
+        return "BackBundle::panel.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -58,6 +58,7 @@ class __TwigTemplate_3c2fcb3fa54d98ec487564f70e40659be6b07719be1f1ac77c7d4452e08
             </div>
         </div>
 </div>
+
 ";
     }
 

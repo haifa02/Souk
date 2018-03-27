@@ -59,6 +59,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/front/css/magnific-popup.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\">
+
+
     <script>
         \$(document).ready(function() {
             \$('.popup-with-zoom-anim').magnificPopup({
@@ -109,15 +111,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class=\"content_box\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-md-4\">
+                <div class=\"col-md-3\">
 
                 </div>
 
-                <div class=\"col-md-8\">
+                <div class=\"col-md-9\">
                     ";
-        // line 77
-        $this->displayBlock('formulaire', $context, $blocks);
         // line 79
+        $this->displayBlock('formulaire', $context, $blocks);
+        // line 81
         echo "                </div>
 
             </div>
@@ -140,10 +142,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ";
     }
 
-    // line 77
+    // line 79
     public function block_formulaire($context, array $blocks = array())
     {
-        // line 78
+        // line 80
         echo "                    ";
     }
 
@@ -159,7 +161,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     public function getDebugInfo()
     {
-        return array (  147 => 78,  144 => 77,  121 => 79,  119 => 77,  60 => 21,  56 => 20,  51 => 18,  45 => 15,  40 => 13,  36 => 12,  31 => 10,  20 => 1,);
+        return array (  149 => 80,  146 => 79,  123 => 81,  121 => 79,  60 => 21,  56 => 20,  51 => 18,  45 => 15,  40 => 13,  36 => 12,  31 => 10,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

@@ -370,7 +370,7 @@
     <parameter key="fos_user.storage">orm</parameter>
     <parameter key="fos_user.firewall_name">main</parameter>
     <parameter key="fos_user.model_manager_name">null</parameter>
-    <parameter key="fos_user.model.user.class">Souk\FrontBundle\Entity\User</parameter>
+    <parameter key="fos_user.model.user.class">Souk\UserBundle\Entity\User</parameter>
     <parameter key="fos_user.profile.form.type">FOS\UserBundle\Form\Type\ProfileFormType</parameter>
     <parameter key="fos_user.profile.form.name">fos_user_profile_form</parameter>
     <parameter key="fos_user.profile.form.validation_groups" type="collection">
@@ -680,7 +680,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -690,7 +690,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -2052,14 +2052,6 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
-        <argument>console.command</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service" id="router_listener"/>
@@ -3115,12 +3107,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5aba127ad8da87.40837974</argument>
+      <argument>5aba1c8324b148.53046733</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5aba127ad8da87.40837974</argument>
+      <argument>5aba1c8324b148.53046733</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -4083,7 +4075,7 @@
       <argument type="service" id="fos_user.util.password_updater"/>
       <argument type="service" id="fos_user.util.canonical_fields_updater"/>
       <argument type="service" id="fos_user.object_manager"/>
-      <argument>Souk\FrontBundle\Entity\User</argument>
+      <argument>Souk\UserBundle\Entity\User</argument>
     </service>
     <service id="fos_user.object_manager" class="Doctrine\Common\Persistence\ObjectManager" public="false">
       <argument>null</argument>
@@ -4226,7 +4218,7 @@
     </service>
     <service id="fos_user.profile.form.type" class="FOS\UserBundle\Form\Type\ProfileFormType">
       <tag name="form.type" alias="fos_user_profile"/>
-      <argument>Souk\FrontBundle\Entity\User</argument>
+      <argument>Souk\UserBundle\Entity\User</argument>
     </service>
     <service id="fos_user.profile.controller" class="FOS\UserBundle\Controller\ProfileController">
       <argument type="service" id="debug.event_dispatcher"/>
@@ -4247,7 +4239,7 @@
     </service>
     <service id="fos_user.registration.form.type" class="FOS\UserBundle\Form\Type\RegistrationFormType">
       <tag name="form.type" alias="fos_user_registration"/>
-      <argument>Souk\FrontBundle\Entity\User</argument>
+      <argument>Souk\UserBundle\Entity\User</argument>
     </service>
     <service id="fos_user.registration.controller" class="FOS\UserBundle\Controller\RegistrationController">
       <argument type="service" id="debug.event_dispatcher"/>
@@ -4269,7 +4261,7 @@
     </service>
     <service id="fos_user.change_password.form.type" class="FOS\UserBundle\Form\Type\ChangePasswordFormType">
       <tag name="form.type" alias="fos_user_change_password"/>
-      <argument>Souk\FrontBundle\Entity\User</argument>
+      <argument>Souk\UserBundle\Entity\User</argument>
     </service>
     <service id="fos_user.change_password.controller" class="FOS\UserBundle\Controller\ChangePasswordController">
       <argument type="service" id="debug.event_dispatcher"/>
@@ -4290,7 +4282,7 @@
     </service>
     <service id="fos_user.resetting.form.type" class="FOS\UserBundle\Form\Type\ResettingFormType">
       <tag name="form.type" alias="fos_user_resetting"/>
-      <argument>Souk\FrontBundle\Entity\User</argument>
+      <argument>Souk\UserBundle\Entity\User</argument>
     </service>
     <service id="fos_user.listener.resetting" class="FOS\UserBundle\EventListener\ResettingListener">
       <tag name="kernel.event_subscriber"/>
@@ -4718,7 +4710,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>N20o0rqlEc</argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4726,7 +4718,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>tWjjiVzAUH</argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4734,7 +4726,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>Xiv0t5A3Oa</argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4742,7 +4734,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>H+nr8b0P2i</argument>
       <argument>0</argument>
-      <argument>MyNajCy8XyoYJem2deRIDP</argument>
+      <argument>kitnz-s9QoJLpp6rgV9nL1</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>

@@ -1,5 +1,45 @@
-{% extends "@FOSUser/layout.html.twig" %}
+{% extends "UserBundle::layout.html.twig" %}
+{% trans_default_domain 'FOSUserBundle' %}
 
-{% block fos_user_content %}
-{% include "@FOSUser/Registration/register_content.html.twig" %}
-{% endblock fos_user_content %}
+{% block formulaire %}
+    <script>
+        $(document).ready(function() {
+            $('select').removeAttr('multiple');
+            $('.tiit').val("null");
+            $('.login-right div:nth-child(6)').height(0);
+            $('.login-right div:nth-child(6)').css('visibility','hidden');
+            $('select').on('change', function() {
+                if(this.value=='ROLE_COM'){
+                    $('.login-right div:nth-child(6)').css('visibility','visible');
+                    $('.tiit').val("");
+                    $('.login-right div:nth-child(6)').height(100);
+                }else{
+                    $('.login-right div:nth-child(6)').css('visibility','hidden');
+                    $('.tiit').val("null");
+                    $('.login-right div:nth-child(6)').height(0);
+                }
+            });
+
+        });
+    </script>
+    <style>
+        .login-right div{width:50%!important;float:left;}
+        .login-right div:last-child{width:100%!important;}
+        .login-right div:first-child{width:100%!important;}
+        .login-right div:nth-child(6){width:100%!important;}
+        label{
+            display: block;}
+    </style>
+<div class="col-md-12 login-right">
+
+
+    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form) }}
+    <br/>
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+    {{ form_end(form) }}
+</div>
+
+{% endblock formulaire %}
