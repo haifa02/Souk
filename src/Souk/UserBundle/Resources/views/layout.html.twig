@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Souk ElMedina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Luxury Furnish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="{{ asset('bundles/front/css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ asset('bundles/front/js/simpleCart.min.js') }}"> </script>
+    <script src="{{ asset('bundles/front/js/jquery.min.js') }}"></script>
+    <!-- Custom Theme files -->
+    <link href="{{ asset('bundles/front/css/style.css') }}" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//webfont-->
+    <script src="{{ asset('bundles/front/js/jquery.easydropdown.js') }}"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+    <script src="{{ asset('bundles/front/js/jquery.magnific-popup.js') }}" type="text/javascript"></script>
+    <link href="{{ asset('bundles/front/css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
+    <script>
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href=""><h6>Souk El Medina</h6></a>
+            </div>
+            <div class="header_right">
+
+                <div class="lang_list">
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="banner_wrap">
+            <div class="bannertop_box">
+
+
+            </div>
+            <div class="banner_right">
+                <h1>Welcome to Souk ElMedina <br></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                <a href="#" class="banner_btn">Buy Now</a>
+            </div>
+            <div class='clearfix'></div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="content_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-8">
+                    {% block formulaire %}
+                    {% endblock formulaire %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+
+</div>
+<div class="footer_bottom">
+    <div class="container">
+        <div class="copy">
+            <p>Copyright &copy; 2018 </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
