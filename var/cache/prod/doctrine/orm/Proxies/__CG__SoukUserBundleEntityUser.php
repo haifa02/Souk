@@ -64,10 +64,10 @@ class User extends \Souk\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'nom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'prenom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'adresse', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'mobile', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'titre_commercial', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+            return ['__isInitialized__', 'id', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'nom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'prenom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'adresse', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'mobile', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'titre_commercial', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'date_fin_ab', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'evennements', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'reclamations', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'reservations', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'commandes', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
         }
 
-        return ['__isInitialized__', 'id', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'nom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'prenom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'adresse', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'mobile', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'titre_commercial', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+        return ['__isInitialized__', 'id', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'nom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'prenom', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'adresse', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'mobile', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'titre_commercial', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'date_fin_ab', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'evennements', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'reclamations', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'reservations', '' . "\0" . 'Souk\\UserBundle\\Entity\\User' . "\0" . 'commandes', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
     }
 
     /**
@@ -176,6 +176,50 @@ class User extends \Souk\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
     /**
      * {@inheritDoc}
      */
+    public function getCommandes()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCommandes', []);
+
+        return parent::getCommandes();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReservations()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReservations', []);
+
+        return parent::getReservations();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEvennements()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEvennements', []);
+
+        return parent::getEvennements();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReclamations()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReclamations', []);
+
+        return parent::getReclamations();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getNom()
     {
 
@@ -281,6 +325,28 @@ class User extends \Souk\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTitreCommercial', [$titre_commercial]);
 
         return parent::setTitreCommercial($titre_commercial);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDateFinAb()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDateFinAb', []);
+
+        return parent::getDateFinAb();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setDateFinAb($date_fin_ab)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDateFinAb', [$date_fin_ab]);
+
+        return parent::setDateFinAb($date_fin_ab);
     }
 
     /**

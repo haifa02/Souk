@@ -8,7 +8,7 @@ class __TwigTemplate_59828a13b8ea681b585a191786fe5fffbb04089d47b619a5fdfcdb10516
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("layout.html.twig", "FrontBundle:default:index.html.twig", 1);
+        $this->parent = $this->loadTemplate("FrontBundle::layout.html.twig", "FrontBundle:default:index.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_59828a13b8ea681b585a191786fe5fffbb04089d47b619a5fdfcdb10516
 
     protected function doGetParent(array $context)
     {
-        return "layout.html.twig";
+        return "FrontBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())

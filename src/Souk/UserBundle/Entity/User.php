@@ -5,6 +5,13 @@ namespace Souk\UserBundle\Entity;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Souk\BackBundle\Entity\Evennements;
+use Souk\BackBundle\Entity\Reservation;
+use Souk\BackBundle\Entity\Reclamations;
+use Souk\BackBundle\Entity\Commandes;
+
 /**
  * @ORM\Entity
  * @ORM\Table(name="users")
@@ -47,6 +54,58 @@ class User extends BaseUser
      * @ORM\Column(name="titre", type="string", length=255)
      */
     private $titre_commercial;
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_fin_ab", type="date")
+     */
+    private $date_fin_ab;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Souk\BackBundle\Entity\Evennements", mappedBy="commercial")
+     */
+    private $evennements;
+    /**
+     * @ORM\OneToMany(targetEntity="Souk\BackBundle\Entity\Reclamations", mappedBy="client")
+     */
+    private $reclamations;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Souk\BackBundle\Entity\Reservation", mappedBy="client")
+     */
+    private $reservations;
+    /**
+     * @ORM\OneToMany(targetEntity="Souk\BackBundle\Entity\Commandes", mappedBy="annonce")
+     */
+    private $commandes;
+    /**
+     * @return Collection|Commandes[]
+     */
+    public function getCommandes()
+    {
+        return $this->commandes;
+    }
+    /**
+     * @return Collection|Reservation[]
+     */
+    public function getReservations()
+    {
+        return $this->reservations;
+    }
+    /**
+     * @return Collection|Evennements[]
+     */
+    public function getEvennements()
+    {
+        return $this->evennements;
+    }
+    /**
+     * @return Collection|Reclamations[]
+     */
+    public function getReclamations()
+    {
+        return $this->reclamations;
+    }
 
     public function __construct()
     {
@@ -132,6 +191,22 @@ class User extends BaseUser
     public function setTitreCommercial($titre_commercial)
     {
         $this->titre_commercial = $titre_commercial;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateFinAb()
+    {
+        return $this->date_fin_ab;
+    }
+
+    /**
+     * @param \DateTime $date_fin_ab
+     */
+    public function setDateFinAb($date_fin_ab)
+    {
+        $this->date_fin_ab = $date_fin_ab;
     }
 
 

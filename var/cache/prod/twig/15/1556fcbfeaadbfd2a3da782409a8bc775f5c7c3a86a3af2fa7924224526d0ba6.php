@@ -111,11 +111,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class=\"content_box\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-md-3\">
+                <div class=\"col-md-2\">
 
                 </div>
 
-                <div class=\"col-md-9\">
+                <div class=\"col-md-10 box-form\">
                     ";
         // line 79
         $this->displayBlock('formulaire', $context, $blocks);

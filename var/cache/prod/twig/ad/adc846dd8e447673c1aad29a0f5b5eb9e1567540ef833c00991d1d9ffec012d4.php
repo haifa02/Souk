@@ -8,15 +8,15 @@ class __TwigTemplate_ca3ddbba7a7fa757d1b8250fd098e5fb2697821b3c9439cc63c789f59f8
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Registration:confirmed.html.twig", 1);
+        $this->parent = $this->loadTemplate("UserBundle::layout.html.twig", "FOSUserBundle:Registration:confirmed.html.twig", 1);
         $this->blocks = array(
-            'fos_user_content' => array($this, 'block_fos_user_content'),
+            'formulaire' => array($this, 'block_formulaire'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "@FOSUser/layout.html.twig";
+        return "UserBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -25,7 +25,7 @@ class __TwigTemplate_ca3ddbba7a7fa757d1b8250fd098e5fb2697821b3c9439cc63c789f59f8
     }
 
     // line 5
-    public function block_fos_user_content($context, array $blocks = array())
+    public function block_formulaire($context, array $blocks = array())
     {
         // line 6
         echo "    <p>";

@@ -738,3 +738,10 @@ fc0167,127.0.0.1,GET,http://localhost:8000/app_dev.php/,1522150729,,500
 62fec7,127.0.0.1,GET,http://localhost:8000/app_dev.php/,1522150759,,200
 6f76df,127.0.0.1,GET,http://localhost:8000/app_dev.php/,1522150824,,200
 d92329,127.0.0.1,GET,http://localhost:8000/app_dev.php/,1522150872,,200
+a921af,127.0.0.1,GET,http://localhost:8000/app_dev.php/register/,1522176362,,200
+5d1acd,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176408,,200
+7d64e6,127.0.0.1,POST,http://localhost:8000/app_dev.php/login_check,1522176422,,302
+8c40f6,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176422,,200
+56253d,127.0.0.1,POST,http://localhost:8000/app_dev.php/login_check,1522176430,,302
+5e3d64,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176430,,200
+9bfdbd,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176453,,200

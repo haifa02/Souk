@@ -31,12 +31,18 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
         echo "    <script>
         \$(document).ready(function() {
             \$('select').removeAttr('multiple');
-            \$('.login-right div:nth-child(7)').css('display','none');
+            \$('.tiit').val(\"null\");
+            \$('.login-right div:nth-child(6)').height(0);
+            \$('.login-right div:nth-child(6)').css('visibility','hidden');
             \$('select').on('change', function() {
-                if(this.val()=='ROLE_COM'){
-                    \$('.login-right div:nth-child(7)').css('display','block');
+                if(this.value=='ROLE_COM'){
+                    \$('.login-right div:nth-child(6)').css('visibility','visible');
+                    \$('.tiit').val(\"\");
+                    \$('.login-right div:nth-child(6)').height(100);
                 }else{
-                    \$('.login-right div:nth-child(7)').css('display','none');
+                    \$('.login-right div:nth-child(6)').css('visibility','hidden');
+                    \$('.tiit').val(\"null\");
+                    \$('.login-right div:nth-child(6)').height(0);
                 }
             });
 
@@ -46,27 +52,30 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
         .login-right div{width:50%!important;float:left;}
         .login-right div:last-child{width:100%!important;}
         .login-right div:first-child{width:100%!important;}
+        .login-right div:nth-child(6){width:100%!important;}
+        label{
+            display: block;}
     </style>
 <div class=\"col-md-12 login-right\">
 
 
     ";
-        // line 27
+        // line 36
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? null), 'form_start', array("method" => "post", "action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_registration_register"), "attr" => array("class" => "fos_user_registration_register")));
         echo "
     ";
-        // line 28
+        // line 37
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["form"] ?? null), 'widget');
         echo "
     <br/>
     <div>
         <input type=\"submit\" value=\"";
-        // line 31
+        // line 40
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("registration.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
     </div>
     ";
-        // line 33
+        // line 42
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? null), 'form_end');
         echo "
 </div>
@@ -86,7 +95,7 @@ class __TwigTemplate_89271072967acaa8119e31f3565940144a9641fb2fac73960af6e9cf9f4
 
     public function getDebugInfo()
     {
-        return array (  70 => 33,  65 => 31,  59 => 28,  55 => 27,  31 => 5,  28 => 4,  11 => 1,);
+        return array (  79 => 42,  74 => 40,  68 => 37,  64 => 36,  31 => 5,  28 => 4,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
