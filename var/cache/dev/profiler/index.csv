@@ -745,3 +745,13 @@ a921af,127.0.0.1,GET,http://localhost:8000/app_dev.php/register/,1522176362,,200
 56253d,127.0.0.1,POST,http://localhost:8000/app_dev.php/login_check,1522176430,,302
 5e3d64,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176430,,200
 9bfdbd,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522176453,,200
+55608b,127.0.0.1,GET,http://localhost:8000/,1522344871,,200
+74e17b,127.0.0.1,GET,http://localhost:8000/login,1522344885,,200
+e9ef8e,127.0.0.1,GET,http://localhost:8000/register,1522344901,,301
+32943f,127.0.0.1,GET,http://localhost:8000/register/,1522344907,7cece5,200
+7cece5,127.0.0.1,GET,http://localhost:8000/register/,1522344907,,500
+bfe21c,127.0.0.1,GET,http://localhost:8000/register/,1522345008,,200
+72b346,127.0.0.1,GET,http://localhost:8000/register/,1522345678,ccb083,200
+ccb083,127.0.0.1,POST,http://localhost:8000/register/,1522345679,,500
+27f51c,127.0.0.1,GET,http://localhost:8000/,1522346763,,200
+f50af0,127.0.0.1,GET,http://localhost:8000/,1522346815,,200
