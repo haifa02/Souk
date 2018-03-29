@@ -134,7 +134,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/var/lib/php/sessions</parameter>
+    <parameter key="session.save_path">/tmp</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -680,7 +680,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -690,7 +690,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -781,7 +781,7 @@
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>/var/lib/php/sessions</argument>
+      <argument>/tmp</argument>
     </service>
     <service id="session.handler.write_check" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\WriteCheckSessionHandler" public="false"/>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener">
@@ -3107,12 +3107,12 @@
     </service>
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
-      <argument>5aba916a98b258.25002766</argument>
+      <argument>5abd2837971116.91924248</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="null"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
     <service id="security.authentication.provider.anonymous.main" class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-      <argument>5aba916a98b258.25002766</argument>
+      <argument>5abd2837971116.91924248</argument>
     </service>
     <service id="security.exception_listener.main" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
@@ -4716,7 +4716,7 @@
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>N20o0rqlEc</argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4724,7 +4724,7 @@
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>tWjjiVzAUH</argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4732,7 +4732,7 @@
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>Xiv0t5A3Oa</argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -4740,7 +4740,7 @@
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false" lazy="true">
       <argument>H+nr8b0P2i</argument>
       <argument>0</argument>
-      <argument>1JHFCMBdNAcObf2pbgGyCB</argument>
+      <argument>kpAyRO8Z0-o+7YpihFWVA+</argument>
       <argument>/opt/lampp/htdocs/dev/souk/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
