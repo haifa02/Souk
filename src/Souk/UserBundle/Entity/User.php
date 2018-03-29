@@ -27,37 +27,37 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
+     * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
     /**
-     * @ORM\Column(type="string",length=255, nullable=true)
+     * @ORM\Column(type="string",length=255)
      *
      */
     private $prenom;
     /**
      * @var string
      *
-     * @ORM\Column(name="adresse", type="string", length=255, nullable=true)
+     * @ORM\Column(name="adresse", type="string", length=255)
      */
     private $adresse;
     /**
      * @var int
      *
-     * @ORM\Column(name="mobile", type="integer", length=255, nullable=true)
+     * @ORM\Column(name="mobile", type="integer", length=255)
      */
     private $mobile;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="titre", type="string", length=255, nullable=true)
+     * @ORM\Column(name="titre", type="string", length=255)
      */
     private $titre_commercial;
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_fin_ab", type="date", nullable=true)
+     * @ORM\Column(name="date_fin_ab", type="date")
      */
     private $date_fin_ab;
 
