@@ -1,2 +1,4 @@
-061c23,127.0.0.1,GET,http://localhost:8000/,1522347554,,200
-234e63,127.0.0.1,GET,http://localhost:8000/login,1522347565,,200
+f7af7b,127.0.0.1,GET,http://localhost:8000/login,1522349209,,200
+887c7a,127.0.0.1,GET,http://localhost:8000/register/,1522403686,,200
+e4175e,127.0.0.1,GET,http://localhost:8000/register/,1522403723,959126,200
+959126,127.0.0.1,POST,http://localhost:8000/register/,1522403723,,500
