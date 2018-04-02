@@ -76,3 +76,7 @@ fos_user:
     from_email:
         address: "nourelhouda.banbia@gmail.com"
         sender_name: "Nour"
+fos_message:
+    db_driver: orm
+    thread_class: Souk\FrontBundle\Entity\Thread
+    message_class: Souk\FrontBundle\Entity\Message

@@ -1,45 +1,129 @@
-{% extends "UserBundle::layout.html.twig" %}
+{% extends "FrontBundle::layout.html.twig" %}
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block formulaire %}
-    <script>
-        $(document).ready(function() {
-            $('select').removeAttr('multiple');
-            $('.tiit').val("null");
-            $('.login-right div:nth-child(6)').height(0);
-            $('.login-right div:nth-child(6)').css('visibility','hidden');
-            $('select').on('change', function() {
-                if(this.value=='ROLE_COM'){
-                    $('.login-right div:nth-child(6)').css('visibility','visible');
-                    $('.tiit').val("");
-                    $('.login-right div:nth-child(6)').height(100);
-                }else{
-                    $('.login-right div:nth-child(6)').css('visibility','hidden');
-                    $('.tiit').val("null");
-                    $('.login-right div:nth-child(6)').height(0);
-                }
-            });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
+<script>
+    $(document).ready(function(){
+        $('select').removeAttr('multiple');
+        $('select').val('ROLE_CLIENT');
+        $('#img-com').hide();
+        $('#img-cl').show();
+        $('#fos_user_registration_form_titre_commercial').val('null');
+        $('#com').hide(100);
+        $("#btn-cl").addClass('active');
+        $("#btn-com").removeClass('active');
+        $('select').css('visibility','hidden');
+        $("#btn-cl").click(function(){
+            $('#com').hide(100);
+            $('#cl').show(100);
+
+            $('#img-com').hide(100);
+            $('#img-cl').show(100);
+            $('#fos_user_registration_form_titre_commercial').val('null');
+            $('select').val('ROLE_CLIENT');
+            $("#btn-cl").addClass('active');
+            $("#btn-com").removeClass('active');
         });
-    </script>
-    <style>
-        .login-right div{width:50%!important;float:left;}
-        .login-right div:last-child{width:100%!important;}
-        .login-right div:first-child{width:100%!important;}
-        .login-right div:nth-child(6){width:100%!important;}
-        label{
-            display: block;}
-    </style>
-<div class="col-md-12 login-right">
+        $("#btn-com").click(function(){
+            $('#fos_user_registration_form_titre_commercial').val('');
+            $('#com').show(100);
+            $('#cl').hide(100);
+
+            $('#img-cl').hide(100);
+            $('#img-com').show(100);
+
+            $('select').val('ROLE_COM');
+            $("#btn-cl").removeClass('active');
+            $("#btn-com").addClass('active');
+        });
+    });
+</script>
+<ul class="nav nav-tabs nav-justified" role="tablist" id="tabs">
+    <li id="btn-cl" class="active"> <span>Vous êtes un Client   </span>  <img id="img-cl" src="/bundles/front/images/check.png"/></li>
+    <li id="btn-com"> <span>Vous êtes un Commercial   </span>   <img id="img-com" src="/bundles/front/images/check.png"/></li>
+</ul>
+    <div class="row" id="tab">
+        <div class="col-md-12">
+            <br/>
+            <br/>
+            <br/>
+            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+            <div class="col-md-3"></div>
+            <div class="col-md-6" class="box-form text-left">
+                <div class="col-md-12">
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.nom) }}
+                        {{ form_errors(form.nom) }}
+                        {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.prenom) }}
+                        {{ form_errors(form.prenom) }}
+                        {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                <div class="col-md-12">
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.mobile) }}
+                        {{ form_errors(form.mobile) }}
+                        {{ form_widget(form.mobile, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.adresse) }}
+                        {{ form_errors(form.adresse) }}
+                        {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                <div class="col-md-12" id="com">
+                    <div class="form-group">
+                        {{ form_label(form.titre_commercial) }}
+                        {{ form_errors(form.titre_commercial) }}
+                        {{ form_widget(form.titre_commercial, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                </div>
+                <div class="col-md-12" id="cl">
 
 
-    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <br/>
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
-    </div>
-    {{ form_end(form) }}
-</div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.email) }}
+                        {{ form_errors(form.email) }}
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.username) }}
+                        {{ form_errors(form.username) }}
+                        {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.plainPassword.first) }}
+                        {{ form_errors(form.plainPassword.first) }}
+                        {{ form_widget(form.plainPassword.first, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ form_label(form.plainPassword.second) }}
+                        {{ form_errors(form.plainPassword.second) }}
+                        {{ form_widget(form.plainPassword.second, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                <div class="col-md-8 text-center">
+                    <input type="submit" value="S'inscrire" class="sign" />
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            {{ form_end(form) }}
+
+        </div></div>
+
 
 {% endblock formulaire %}
