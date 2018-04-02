@@ -12,11 +12,13 @@ use Souk\BackBundle\Entity\Reservation;
 use Souk\BackBundle\Entity\Reclamations;
 use Souk\BackBundle\Entity\Commandes;
 
+use FOS\MessageBundle\Model\ParticipantInterface;
+
 /**
  * @ORM\Entity
  * @ORM\Table(name="users")
  */
-class User extends BaseUser
+class User extends BaseUser implements ParticipantInterface
 {
     /**
      * @ORM\Id
