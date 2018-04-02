@@ -11,26 +11,24 @@
         $('select').val('ROLE_CLIENT');
         $('#img-com').hide();
         $('#img-cl').show();
-
+        $('#fos_user_registration_form_titre_commercial').val('null');
         $('#com').hide(100);
         $("#btn-cl").addClass('active');
         $("#btn-com").removeClass('active');
         $('select').css('visibility','hidden');
         $("#btn-cl").click(function(){
-            $('#fos_user_registration_form_skills').val('');
             $('#com').hide(100);
             $('#cl').show(100);
 
             $('#img-com').hide(100);
             $('#img-cl').show(100);
-            //$('#fos_user_registration_form_domaine').val('null');
+            $('#fos_user_registration_form_titre_commercial').val('null');
             $('select').val('ROLE_CLIENT');
             $("#btn-cl").addClass('active');
             $("#btn-com").removeClass('active');
         });
         $("#btn-com").click(function(){
-            //$('#fos_user_registration_form_skills').val('null');
-            //$('#fos_user_registration_form_domaine').val('');
+            $('#fos_user_registration_form_titre_commercial').val('');
             $('#com').show(100);
             $('#cl').hide(100);
 
