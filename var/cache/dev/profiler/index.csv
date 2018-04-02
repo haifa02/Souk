@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+d080ee,127.0.0.1,GET,http://localhost:8000/,1522525982,,200
+046a77,127.0.0.1,GET,http://localhost:8000/app_dev.php/login,1522529465,,200
+bfe02f,127.0.0.1,GET,http://localhost:8000/,1522529468,,200
+da024b,127.0.0.1,GET,http://localhost:8000/,1522688596,,200
+81dabb,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522688602,ed8848,200
+ed8848,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522688602,,404
+2431e2,127.0.0.1,GET,http://localhost:8000/,1522688677,,200
+3834f2,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522688677,26cf29,200
+26cf29,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522688677,,404
+b652c2,127.0.0.1,GET,http://localhost:8000/,1522689259,,200
+cbe86f,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522689260,2d6a43,200
+2d6a43,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522689260,,404
+8be8ae,127.0.0.1,GET,http://localhost:8000/,1522692541,,200
+e9514b,127.0.0.1,GET,http://localhost:8000/,1522692945,,200
+db355c,127.0.0.1,GET,http://localhost:8000/login,1522692956,,200
+ad23c0,127.0.0.1,POST,http://localhost:8000/login_check,1522692975,,302
+6315d2,127.0.0.1,GET,http://localhost:8000/login,1522692976,,200
+18730f,127.0.0.1,GET,http://localhost:8000/register/,1522693027,,200
+1f4ae3,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522693417,9ec799,200
+9ec799,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522693417,,404
+c5cfb2,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522693443,71a796,200
+71a796,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522693443,,404
+=======
+<<<<<<< HEAD
+f7af7b,127.0.0.1,GET,http://localhost:8000/login,1522349209,,200
+887c7a,127.0.0.1,GET,http://localhost:8000/register/,1522403686,,200
+e4175e,127.0.0.1,GET,http://localhost:8000/register/,1522403723,959126,200
+959126,127.0.0.1,POST,http://localhost:8000/register/,1522403723,,500
+211b58,127.0.0.1,GET,http://localhost:8000/,1522505565,,200
+=======
 6745e3,127.0.0.1,GET,http://localhost:8000/,1522690798,,200
 3d3345,127.0.0.1,GET,http://localhost:8000/register/,1522690803,,200
 f5b735,127.0.0.1,GET,http://localhost:8000/messages,1522690810,,301
@@ -165,6 +196,7 @@ a1dafd,127.0.0.1,POST,http://localhost:8000/messages/new,1522693426,,200
 629523,127.0.0.1,GET,http://localhost:8000/bundles/front/css/bootstrap.css.map,1522693426,,404
 3e22dd,127.0.0.1,GET,http://localhost:8000/messages/new,1522693431,,200
 8f80e3,127.0.0.1,POST,http://localhost:8000/messages/new,1522693445,,200
+<<<<<<< HEAD
 66730a,127.0.0.1,GET,http://localhost:8000/,1522694122,,200
 83e5a2,127.0.0.1,GET,http://localhost:8000/logout,1522694128,,302
 0b7f6f,127.0.0.1,GET,http://localhost:8000/,1522694128,,200
@@ -240,3 +272,7 @@ e220ea,127.0.0.1,GET,http://localhost:8000/messages/,1522695324,,200
 f373da,127.0.0.1,GET,http://localhost:8000/messages/2,1522695327,,200
 35d674,127.0.0.1,GET,http://localhost:8000/messages/,1522695329,,200
 982753,127.0.0.1,GET,http://localhost:8000/messages/,1522695345,,200
+=======
+>>>>>>> f482a985a4bbf043b6a665c3a3f84d4121c56088
+>>>>>>> 80fa6f66e08daa4be442e4f9636c6ac1c2ea561b
+>>>>>>> 225ddebadb8951c4afb17dc96ebe36235d9c3918
