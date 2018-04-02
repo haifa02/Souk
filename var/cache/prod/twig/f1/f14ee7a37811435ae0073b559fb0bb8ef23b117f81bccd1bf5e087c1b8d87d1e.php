@@ -15,6 +15,15 @@ class __TwigTemplate_08569cd4e449a1d5546ae4811cb8d557b7285fcd2d1551d0027dd3d2334
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+<<<<<<< HEAD:var/cache/dev/twig/00/00e8e972563ae91f87a9354982af6d46497f242d336c328cd86cc1105eaa4f54.php
+        $__internal_ceac937a0654ad9909b6d386c6c26404faa8db5ea56bfd960570469783124c6e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ceac937a0654ad9909b6d386c6c26404faa8db5ea56bfd960570469783124c6e->enter($__internal_ceac937a0654ad9909b6d386c6c26404faa8db5ea56bfd960570469783124c6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/logs.html.twig"));
+
+        $__internal_4543b47851950dc09b7cdcd844836d0c31dd9701cdef8a582a361b284bd693f3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4543b47851950dc09b7cdcd844836d0c31dd9701cdef8a582a361b284bd693f3->enter($__internal_4543b47851950dc09b7cdcd844836d0c31dd9701cdef8a582a361b284bd693f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/logs.html.twig"));
+
+=======
+>>>>>>> f482a985a4bbf043b6a665c3a3f84d4121c56088:var/cache/prod/twig/f1/f14ee7a37811435ae0073b559fb0bb8ef23b117f81bccd1bf5e087c1b8d87d1e.php
         // line 1
         $context["channel_is_defined"] = $this->getAttribute(twig_first($this->env, ($context["logs"] ?? null)), "channel", array(), "any", true, true);
         // line 2
@@ -103,6 +112,15 @@ class __TwigTemplate_08569cd4e449a1d5546ae4811cb8d557b7285fcd2d1551d0027dd3d2334
         echo "    </tbody>
 </table>
 ";
+<<<<<<< HEAD:var/cache/dev/twig/00/00e8e972563ae91f87a9354982af6d46497f242d336c328cd86cc1105eaa4f54.php
+        
+        $__internal_ceac937a0654ad9909b6d386c6c26404faa8db5ea56bfd960570469783124c6e->leave($__internal_ceac937a0654ad9909b6d386c6c26404faa8db5ea56bfd960570469783124c6e_prof);
+
+        
+        $__internal_4543b47851950dc09b7cdcd844836d0c31dd9701cdef8a582a361b284bd693f3->leave($__internal_4543b47851950dc09b7cdcd844836d0c31dd9701cdef8a582a361b284bd693f3_prof);
+
+=======
+>>>>>>> f482a985a4bbf043b6a665c3a3f84d4121c56088:var/cache/prod/twig/f1/f14ee7a37811435ae0073b559fb0bb8ef23b117f81bccd1bf5e087c1b8d87d1e.php
     }
 
     public function getTemplateName()
