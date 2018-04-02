@@ -44,7 +44,7 @@ class RegistrationFormType extends AbstractType
         $builder
         ->add('roles', ChoiceType::class, array('attr'  =>  array(
             'class' => 'login_input',
-            'style' => 'margin:5px 0;'),'label' => 'Type
+            'style' => 'margin:5px 0;'),'label' => ' 
 ',
         'choices' => array('Client' => 'ROLE_CLIENT',
             'Commercial' => 'ROLE_COM'),

@@ -8,11 +8,57 @@ h4, h5, h6,
 h1, h2, h3 {margin: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
+#tabs li {
+	border-top: 0px;
+	border-bottom: 4px solid #8c5388!important;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 1px solid #ffffff;
+	background-color: #ecceac;
+	border-radius: 0px;
+	color: #8c5287;
+	font-weight: 900;
+}
+.sign {
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+	background: rgb(255, 182, 30);
+	padding: 15px;
+}
+#tabs li.active {
+	border-bottom: 4px solid #ecceac!important;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: none;
+	background-color: #8c5388!important;
+	color: #fff;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{color:#efd26b!important;background: transparent!important;}
+
+.btn-simple {
+	background: transparent;
+	border: none;
+}
+#tabs li {
+	height: 40px;
+	text-align: center;
+	padding-top: 8px;
+	cursor: pointer;
+}
+
+.member {
+	background: #381c7b91;
+	color: #eee;
+	text-align: center;
+	padding: 22px;
+}
 
 html, body{
    font-family: 'Raleway', sans-serif;
    font-size: 100%;
-   background:#f8f8f8; 
+   background:#f8f8f8;
 }
 body a{
 	transition:0.5s all;
@@ -57,7 +103,6 @@ body a{
 }
 .header_right{
 	float:right;
-	margin-top: 2em;
 	width: 24%;
 }
 .lang_list{
@@ -242,7 +287,7 @@ ul.quick_access li.check{
 .welcome_box h3{
 	color:#333;
 	font-size:1.5em;
-	text-transform: capitalize;	 
+	text-transform: capitalize;
 }
 .welcome_box p {
   color: #fff;
@@ -312,12 +357,12 @@ ul.quick_access li.check{
 /* WRAPPER */
 .dropdown{
 	position: relative;
-	width:60px;
+	/* width: 60px; */
 	cursor: pointer;
 	font-weight: 200;
-	background:none;
-	padding: 8px 0px 8px;
-	color:  #fff;
+	background: none;
+	/* padding: 8px 0px 8px; */
+	color: #fff;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
@@ -380,7 +425,7 @@ ul.quick_access li.check{
 	height: 100%;
 	opacity: 0;
 }
-/* SELECTED FEEDBACK ITEM */ 
+/* SELECTED FEEDBACK ITEM */
 .dropdown .selected,
 .dropdown li{
 	display: block;
@@ -435,13 +480,14 @@ ul.quick_access li.check{
 .dropdown ul{
 	position: absolute;
 	left: 0;
-	top: 0;
-	height: 100%;
+	top: 44px;
+	/* height: 100%; */
 	width: 100%;
 	list-style: none;
 	overflow: hidden;
-	padding:0;
-	background:#a23966;
+	padding: 0;
+	color: #fff;
+	background: #381c7b91;
 }
 .dropdown.scrollable.open ul{
 	overflow-y: auto;
@@ -485,10 +531,8 @@ h3.menu_head{
 ul.nav{
 	padding:14px 0;
 	list-style:none;
-	background:#68656A;
 }
 ul.nav li:hover {
-	background:#333;
 	color:#fff;
 }
 ul.nav li a{
@@ -668,16 +712,16 @@ span.reducedfrom {
 .brands{
 	padding:2em;
 	background:#fff;
-}			
+}
 ul.brand_icons{
 	padding:0;
 	list-style:none;
-}	
+}
 ul.brand_icons li {
   width: 15%;
   display: inline-block;
   margin-right: 3.3em;
-}	
+}
 ul.brand_icons li.last{
 	margin:0;
 }
@@ -688,7 +732,7 @@ ul.brand_icons li.last{
 ul.instagram_grid{
 	padding:0;
 	list-style:none;
-}	
+}
 ul.instagram_grid li{
 	width: 15.936%;
 	float: left;
@@ -699,7 +743,7 @@ ul.instagram_grid li img{
 }
 ul.instagram_grid li.last_instagram{
 	margin:0;
-}			
+}
 .instagram h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight:400;
@@ -837,7 +881,7 @@ p.email a{
 	color:#df4782;
 }
 p.email span:hover{
-	text-decoration:underline; 
+	text-decoration:underline;
 }
 .footer_bottom{
 	background:#333;
@@ -1362,7 +1406,7 @@ h3.typo-title{
 .label {
   font-weight: 300 !important;
   border-radius:4px;
-}  
+}
 .grid_5{
 	background:none;
 	padding:2em 0;
@@ -1434,7 +1478,7 @@ p.comment-form-author {
 	 font-family: 'Raleway', sans-serif;
 }
 .contact-form input[type="submit"]:hover{
-	background:#df4782;	
+	background:#df4782;
 }
 .map{
 	margin-top: 3em;
@@ -1936,7 +1980,7 @@ ul.list1 a {
 }
 .span_2_of_a1 h1 {
   font-size: 1.3em;
-}  
+}
 .welcome_box {
 	padding:4em 1.4em;
 }
@@ -1945,10 +1989,10 @@ ul.list1 a {
 }
 ul.nav li a, ul.category_nav li a{
   font-size: .8em;
-}  
+}
 h3.menu_head {
   padding: 2em 0 2em 2em;
-}  
+}
 .tags {
 	padding: 1em;
 }
@@ -2232,7 +2276,7 @@ p.cart_desc {
 }
 h3.like, h3.recent {
   font-size: 1.1em;
-}  
+}
 }
 @media (max-width:640px){
 .bannertop_box {
@@ -2303,7 +2347,7 @@ i.tw {
 @media (max-width:568px){
 .logo img {
   width: 110px;
-}	
+}
 ul.social {
   margin-right: 1em;
 }
@@ -2318,10 +2362,10 @@ ul.social {
 }
 ul.quick_access li a, ul.login li a, ul.cart p, h5.empty{
   font-size: 11px;
-}  
+}
 h3.m_1, h3.m_2{
   font-size: 1.1em;
-}  
+}
 .brands {
   padding: 10px;
 }
@@ -2360,7 +2404,7 @@ i.pin {
 }
 h4.tag_head {
   font-size: 1em;
-}  
+}
 .about_box{
   width: 39%;
 }
@@ -2369,10 +2413,10 @@ h4.tag_head {
 }
 .cbp-vm-add {
   margin: 10px 0 0;
-}  
+}
 .pages .limiter, .sort-by{
   font-size: 12px;
-}  
+}
 .dreamcrub {
   margin: 2em 0 1em;
 }
@@ -2441,7 +2485,7 @@ h3.typo-title {
 }
 .footer-grid h3 {
   font-size: 1.1em;
-}  
+}
 .logo {
   margin: 0 0 1em 0;
   float: none;
@@ -2523,7 +2567,7 @@ ul.women_pagenation li a {
 .search input[type="submit"] {
   padding: 4px 15px;
   background: url('../images/search.png') no-repeat 7px 8px #333;
-}  
+}
 .search input[type="submit"]:hover {
   background: url('../images/search.png') no-repeat 7px 8px #df4782;
 }
@@ -2532,7 +2576,7 @@ h3.m_1 {
 }
 span.item_price {
   font-size: .8em;
-}  
+}
 a.item_1 {
   bottom: 55px;
 }
