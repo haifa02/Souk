@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Resetting:email.txt.twig */
+/* UserBundle:Resetting:email.txt.twig */
 class __TwigTemplate_de02d1e067a53f48161d598c4174cd665c2bf8683aa496df5495879b69c68a5c extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -52,7 +52,7 @@ class __TwigTemplate_de02d1e067a53f48161d598c4174cd665c2bf8683aa496df5495879b69c
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Resetting:email.txt.twig";
+        return "UserBundle:Resetting:email.txt.twig";
     }
 
     public function getDebugInfo()
@@ -70,6 +70,6 @@ class __TwigTemplate_de02d1e067a53f48161d598c4174cd665c2bf8683aa496df5495879b69c
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Resetting:email.txt.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/email.txt.twig");
+        return new Twig_Source("", "UserBundle:Resetting:email.txt.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/email.txt.twig");
     }
 }

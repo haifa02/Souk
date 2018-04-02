@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Resetting:check_email.html.twig */
+/* UserBundle:Resetting:check_email.html.twig */
 class __TwigTemplate_8238a7cf075993368f3b56fe4061633014f75a63976c9b85e306419e82c372bd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_8238a7cf075993368f3b56fe4061633014f75a63976c9b85e306419e82c
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Resetting:check_email.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "UserBundle:Resetting:check_email.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -39,7 +39,7 @@ class __TwigTemplate_8238a7cf075993368f3b56fe4061633014f75a63976c9b85e306419e82c
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Resetting:check_email.html.twig";
+        return "UserBundle:Resetting:check_email.html.twig";
     }
 
     public function isTraitable()
@@ -62,6 +62,6 @@ class __TwigTemplate_8238a7cf075993368f3b56fe4061633014f75a63976c9b85e306419e82c
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Resetting:check_email.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/check_email.html.twig");
+        return new Twig_Source("", "UserBundle:Resetting:check_email.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/check_email.html.twig");
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Group:show_content.html.twig */
+/* UserBundle:Group:show_content.html.twig */
 class __TwigTemplate_033b00419583dbddabfec19f0a28c8d5150557caf911877a857bfd2a7bc29e6c extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -30,7 +30,7 @@ class __TwigTemplate_033b00419583dbddabfec19f0a28c8d5150557caf911877a857bfd2a7bc
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Group:show_content.html.twig";
+        return "UserBundle:Group:show_content.html.twig";
     }
 
     public function isTraitable()
@@ -53,6 +53,6 @@ class __TwigTemplate_033b00419583dbddabfec19f0a28c8d5150557caf911877a857bfd2a7bc
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Group:show_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Group/show_content.html.twig");
+        return new Twig_Source("", "UserBundle:Group:show_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Group/show_content.html.twig");
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Profile:edit_content.html.twig */
+/* UserBundle:Profile:edit_content.html.twig */
 class __TwigTemplate_a24e2104827f69aa4a7b07563335a35c092060d581391c039e44a5e37f4041c3 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -40,7 +40,7 @@ class __TwigTemplate_a24e2104827f69aa4a7b07563335a35c092060d581391c039e44a5e37f4
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Profile:edit_content.html.twig";
+        return "UserBundle:Profile:edit_content.html.twig";
     }
 
     public function isTraitable()
@@ -63,6 +63,6 @@ class __TwigTemplate_a24e2104827f69aa4a7b07563335a35c092060d581391c039e44a5e37f4
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Profile:edit_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Profile/edit_content.html.twig");
+        return new Twig_Source("", "UserBundle:Profile:edit_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Profile/edit_content.html.twig");
     }
 }

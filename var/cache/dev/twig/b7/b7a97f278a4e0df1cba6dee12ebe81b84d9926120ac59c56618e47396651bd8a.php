@@ -21,29 +21,29 @@ class __TwigTemplate_91602efacc4055669e10f23e8ece26049aeaf6f8ec2264dfc36772c33a8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3e400cc6d6bebf5d202e0ae73ae117d2ea5f4f0a67b9e741ec09af526c1db058 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3e400cc6d6bebf5d202e0ae73ae117d2ea5f4f0a67b9e741ec09af526c1db058->enter($__internal_3e400cc6d6bebf5d202e0ae73ae117d2ea5f4f0a67b9e741ec09af526c1db058_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSMessageBundle:Message:newThread.html.twig"));
+        $__internal_de9694a42b108775e8fddf931203f314f6809ef5dbeb9eff86dfcac0b42dcabd = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_de9694a42b108775e8fddf931203f314f6809ef5dbeb9eff86dfcac0b42dcabd->enter($__internal_de9694a42b108775e8fddf931203f314f6809ef5dbeb9eff86dfcac0b42dcabd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSMessageBundle:Message:newThread.html.twig"));
 
-        $__internal_dd8af2e530b185c094ba1150a80a927f118d0c56110c9c9af31b73adfe945299 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dd8af2e530b185c094ba1150a80a927f118d0c56110c9c9af31b73adfe945299->enter($__internal_dd8af2e530b185c094ba1150a80a927f118d0c56110c9c9af31b73adfe945299_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSMessageBundle:Message:newThread.html.twig"));
+        $__internal_6db03f50292a79eaff49930e9d0e94048dd49533d49f1c239b40ab66d9edb1f1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6db03f50292a79eaff49930e9d0e94048dd49533d49f1c239b40ab66d9edb1f1->enter($__internal_6db03f50292a79eaff49930e9d0e94048dd49533d49f1c239b40ab66d9edb1f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSMessageBundle:Message:newThread.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3e400cc6d6bebf5d202e0ae73ae117d2ea5f4f0a67b9e741ec09af526c1db058->leave($__internal_3e400cc6d6bebf5d202e0ae73ae117d2ea5f4f0a67b9e741ec09af526c1db058_prof);
+        $__internal_de9694a42b108775e8fddf931203f314f6809ef5dbeb9eff86dfcac0b42dcabd->leave($__internal_de9694a42b108775e8fddf931203f314f6809ef5dbeb9eff86dfcac0b42dcabd_prof);
 
         
-        $__internal_dd8af2e530b185c094ba1150a80a927f118d0c56110c9c9af31b73adfe945299->leave($__internal_dd8af2e530b185c094ba1150a80a927f118d0c56110c9c9af31b73adfe945299_prof);
+        $__internal_6db03f50292a79eaff49930e9d0e94048dd49533d49f1c239b40ab66d9edb1f1->leave($__internal_6db03f50292a79eaff49930e9d0e94048dd49533d49f1c239b40ab66d9edb1f1_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_41537768f7e985ee4e0351ea3f4219a90a0a2f891a26783445959f63baf6880f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_41537768f7e985ee4e0351ea3f4219a90a0a2f891a26783445959f63baf6880f->enter($__internal_41537768f7e985ee4e0351ea3f4219a90a0a2f891a26783445959f63baf6880f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8de8fca2cd41f53d855abcdc0dbc6c365296712347ad2f7407bc902be3eacadf = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8de8fca2cd41f53d855abcdc0dbc6c365296712347ad2f7407bc902be3eacadf->enter($__internal_8de8fca2cd41f53d855abcdc0dbc6c365296712347ad2f7407bc902be3eacadf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_8eb6b42f6607fe821aacb34432d222aaa53377903434a815642b598839b9081f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8eb6b42f6607fe821aacb34432d222aaa53377903434a815642b598839b9081f->enter($__internal_8eb6b42f6607fe821aacb34432d222aaa53377903434a815642b598839b9081f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a4b0583a3e52c23231069fdfc7a1b42e52590e1376e4c9f62666437e495111bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a4b0583a3e52c23231069fdfc7a1b42e52590e1376e4c9f62666437e495111bb->enter($__internal_a4b0583a3e52c23231069fdfc7a1b42e52590e1376e4c9f62666437e495111bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -108,56 +108,18 @@ class __TwigTemplate_91602efacc4055669e10f23e8ece26049aeaf6f8ec2264dfc36772c33a8
                                 </div>
                                 <div class=\"box-body no-padding\">
                                     
-                                        <form style=\"width:100%\" action=\"";
+<form action=\"";
         // line 46
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getUrl("fos_message_thread_new");
         echo "\" method=\"post\">
-                                        <div class=\"col-md-12\">
-                                                    ";
-        // line 48
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "recipient", array()), 'label');
+    ";
+        // line 47
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["form"] ?? $this->getContext($context, "form")), 'widget');
         echo "
-                                                    ";
-        // line 49
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "recipient", array()), 'errors');
-        echo "
-                                                    ";
-        // line 50
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "recipient", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                                </div>
-                                                <div class=\"col-md-12\">
-                                                    ";
-        // line 53
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'label');
-        echo "
-                                                    ";
-        // line 54
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'errors');
-        echo "
-                                                    ";
-        // line 55
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "subject", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                                </div>
-                                                 <div class=\"col-md-12\">
-                                                    ";
-        // line 58
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "body", array()), 'label');
-        echo "
-                                                    ";
-        // line 59
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "body", array()), 'errors');
-        echo "
-                                                    ";
-        // line 60
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["form"] ?? $this->getContext($context, "form")), "body", array()), 'widget', array("attr" => array("class" => "form-control")));
-        echo "
-                                                </div>  
 
-                                            <input type=\"submit\" class=\"sign push-top\" />
-
-                                        </form>
+    <input type=\"submit\" class=\"sign\" />
+</form>
+                                        
                                 </div>
                                 <br/>
                                 <br/>
@@ -172,10 +134,10 @@ class __TwigTemplate_91602efacc4055669e10f23e8ece26049aeaf6f8ec2264dfc36772c33a8
 </div>
 ";
         
-        $__internal_8eb6b42f6607fe821aacb34432d222aaa53377903434a815642b598839b9081f->leave($__internal_8eb6b42f6607fe821aacb34432d222aaa53377903434a815642b598839b9081f_prof);
+        $__internal_a4b0583a3e52c23231069fdfc7a1b42e52590e1376e4c9f62666437e495111bb->leave($__internal_a4b0583a3e52c23231069fdfc7a1b42e52590e1376e4c9f62666437e495111bb_prof);
 
         
-        $__internal_41537768f7e985ee4e0351ea3f4219a90a0a2f891a26783445959f63baf6880f->leave($__internal_41537768f7e985ee4e0351ea3f4219a90a0a2f891a26783445959f63baf6880f_prof);
+        $__internal_8de8fca2cd41f53d855abcdc0dbc6c365296712347ad2f7407bc902be3eacadf->leave($__internal_8de8fca2cd41f53d855abcdc0dbc6c365296712347ad2f7407bc902be3eacadf_prof);
 
     }
 
@@ -191,7 +153,7 @@ class __TwigTemplate_91602efacc4055669e10f23e8ece26049aeaf6f8ec2264dfc36772c33a8
 
     public function getDebugInfo()
     {
-        return array (  154 => 60,  150 => 59,  146 => 58,  140 => 55,  136 => 54,  132 => 53,  126 => 50,  122 => 49,  118 => 48,  113 => 46,  92 => 28,  85 => 24,  76 => 20,  70 => 16,  68 => 15,  64 => 14,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  117 => 47,  113 => 46,  92 => 28,  85 => 24,  76 => 20,  70 => 16,  68 => 15,  64 => 14,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -249,26 +211,12 @@ class __TwigTemplate_91602efacc4055669e10f23e8ece26049aeaf6f8ec2264dfc36772c33a8
                                 </div>
                                 <div class=\"box-body no-padding\">
                                     
-                                        <form style=\"width:100%\" action=\"{{ url('fos_message_thread_new') }}\" method=\"post\">
-                                        <div class=\"col-md-12\">
-                                                    {{ form_label(form.recipient) }}
-                                                    {{ form_errors(form.recipient) }}
-                                                    {{ form_widget(form.recipient, {'attr': {'class': 'form-control'}}) }}
-                                                </div>
-                                                <div class=\"col-md-12\">
-                                                    {{ form_label(form.subject) }}
-                                                    {{ form_errors(form.subject) }}
-                                                    {{ form_widget(form.subject, {'attr': {'class': 'form-control'}}) }}
-                                                </div>
-                                                 <div class=\"col-md-12\">
-                                                    {{ form_label(form.body) }}
-                                                    {{ form_errors(form.body) }}
-                                                    {{ form_widget(form.body, {'attr': {'class': 'form-control'}}) }}
-                                                </div>  
+<form action=\"{{ url('fos_message_thread_new') }}\" method=\"post\">
+    {{ form_widget(form) }}
 
-                                            <input type=\"submit\" class=\"sign push-top\" />
-
-                                        </form>
+    <input type=\"submit\" class=\"sign\" />
+</form>
+                                        
                                 </div>
                                 <br/>
                                 <br/>

@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Resetting:request.html.twig */
+/* UserBundle:Resetting:request.html.twig */
 class __TwigTemplate_c9f5f1510e344c6f125105da87f0fefa2d45b32f9ea0bd45481ced86fb49065d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_c9f5f1510e344c6f125105da87f0fefa2d45b32f9ea0bd45481ced86fb4
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Resetting:request.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "UserBundle:Resetting:request.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -28,12 +28,12 @@ class __TwigTemplate_c9f5f1510e344c6f125105da87f0fefa2d45b32f9ea0bd45481ced86fb4
     public function block_fos_user_content($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("@FOSUser/Resetting/request_content.html.twig", "FOSUserBundle:Resetting:request.html.twig", 4)->display($context);
+        $this->loadTemplate("@FOSUser/Resetting/request_content.html.twig", "UserBundle:Resetting:request.html.twig", 4)->display($context);
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Resetting:request.html.twig";
+        return "UserBundle:Resetting:request.html.twig";
     }
 
     public function isTraitable()
@@ -56,6 +56,6 @@ class __TwigTemplate_c9f5f1510e344c6f125105da87f0fefa2d45b32f9ea0bd45481ced86fb4
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Resetting:request.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/request.html.twig");
+        return new Twig_Source("", "UserBundle:Resetting:request.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/request.html.twig");
     }
 }

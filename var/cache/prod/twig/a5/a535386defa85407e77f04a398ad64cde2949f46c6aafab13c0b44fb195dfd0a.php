@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Resetting:request_content.html.twig */
+/* UserBundle:Resetting:request_content.html.twig */
 class __TwigTemplate_a311fa9bcb3e311bd4e369785d2081a5b9e83e5c8e2108f9b1728e6a7da077af extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -40,7 +40,7 @@ class __TwigTemplate_a311fa9bcb3e311bd4e369785d2081a5b9e83e5c8e2108f9b1728e6a7da
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Resetting:request_content.html.twig";
+        return "UserBundle:Resetting:request_content.html.twig";
     }
 
     public function isTraitable()
@@ -63,6 +63,6 @@ class __TwigTemplate_a311fa9bcb3e311bd4e369785d2081a5b9e83e5c8e2108f9b1728e6a7da
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Resetting:request_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/request_content.html.twig");
+        return new Twig_Source("", "UserBundle:Resetting:request_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Resetting/request_content.html.twig");
     }
 }

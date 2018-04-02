@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Registration:email.txt.twig */
+/* UserBundle:Registration:email.txt.twig */
 class __TwigTemplate_00655b7b00eb3e4fd801d45a840fa7e8b168271d35b38602683c6609866c2290 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -52,7 +52,7 @@ class __TwigTemplate_00655b7b00eb3e4fd801d45a840fa7e8b168271d35b38602683c6609866
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:email.txt.twig";
+        return "UserBundle:Registration:email.txt.twig";
     }
 
     public function getDebugInfo()
@@ -70,6 +70,6 @@ class __TwigTemplate_00655b7b00eb3e4fd801d45a840fa7e8b168271d35b38602683c6609866
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Registration:email.txt.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/email.txt.twig");
+        return new Twig_Source("", "UserBundle:Registration:email.txt.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/email.txt.twig");
     }
 }

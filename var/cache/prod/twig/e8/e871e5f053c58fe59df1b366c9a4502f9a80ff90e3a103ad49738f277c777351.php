@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Security:login_content.html.twig */
+/* UserBundle:Security:login_content.html.twig */
 class __TwigTemplate_17bccda5c5b0b82ae91446c1e88870bdaef8ee69cd8ea61db9673d629a8057f6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -19,7 +19,7 @@ class __TwigTemplate_17bccda5c5b0b82ae91446c1e88870bdaef8ee69cd8ea61db9673d629a8
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Security:login_content.html.twig";
+        return "UserBundle:Security:login_content.html.twig";
     }
 
     public function getDebugInfo()
@@ -37,6 +37,6 @@ class __TwigTemplate_17bccda5c5b0b82ae91446c1e88870bdaef8ee69cd8ea61db9673d629a8
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Security:login_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Security/login_content.html.twig");
+        return new Twig_Source("", "UserBundle:Security:login_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Security/login_content.html.twig");
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Security:login.html.twig */
+/* UserBundle:Security:login.html.twig */
 class __TwigTemplate_2ebb073a667067a1eb662d75e55221d3de7e6b4d8dec66d110008f58cc979136 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_2ebb073a667067a1eb662d75e55221d3de7e6b4d8dec66d110008f58cc9
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("FrontBundle::layout.html.twig", "FOSUserBundle:Security:login.html.twig", 1);
+        $this->parent = $this->loadTemplate("FrontBundle::layout.html.twig", "UserBundle:Security:login.html.twig", 1);
         $this->blocks = array(
             'formulaire' => array($this, 'block_formulaire'),
         );
@@ -92,7 +92,7 @@ class __TwigTemplate_2ebb073a667067a1eb662d75e55221d3de7e6b4d8dec66d110008f58cc9
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Security:login.html.twig";
+        return "UserBundle:Security:login.html.twig";
     }
 
     public function isTraitable()
@@ -115,6 +115,6 @@ class __TwigTemplate_2ebb073a667067a1eb662d75e55221d3de7e6b4d8dec66d110008f58cc9
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Security:login.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Security/login.html.twig");
+        return new Twig_Source("", "UserBundle:Security:login.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Security/login.html.twig");
     }
 }

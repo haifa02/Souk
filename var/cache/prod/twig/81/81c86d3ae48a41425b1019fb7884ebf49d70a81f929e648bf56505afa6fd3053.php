@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:ChangePassword:change_password.html.twig */
+/* UserBundle:ChangePassword:change_password.html.twig */
 class __TwigTemplate_df535194465d34c3057b1ddfd22067a7304a08f8353327dbd617c7bf37a90f2c extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_df535194465d34c3057b1ddfd22067a7304a08f8353327dbd617c7bf37a
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:ChangePassword:change_password.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "UserBundle:ChangePassword:change_password.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -28,12 +28,12 @@ class __TwigTemplate_df535194465d34c3057b1ddfd22067a7304a08f8353327dbd617c7bf37a
     public function block_fos_user_content($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("@FOSUser/ChangePassword/change_password_content.html.twig", "FOSUserBundle:ChangePassword:change_password.html.twig", 4)->display($context);
+        $this->loadTemplate("@FOSUser/ChangePassword/change_password_content.html.twig", "UserBundle:ChangePassword:change_password.html.twig", 4)->display($context);
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:ChangePassword:change_password.html.twig";
+        return "UserBundle:ChangePassword:change_password.html.twig";
     }
 
     public function isTraitable()
@@ -56,6 +56,6 @@ class __TwigTemplate_df535194465d34c3057b1ddfd22067a7304a08f8353327dbd617c7bf37a
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:ChangePassword:change_password.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/ChangePassword/change_password.html.twig");
+        return new Twig_Source("", "UserBundle:ChangePassword:change_password.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/ChangePassword/change_password.html.twig");
     }
 }

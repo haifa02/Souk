@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:ChangePassword:change_password_content.html.twig */
+/* UserBundle:ChangePassword:change_password_content.html.twig */
 class __TwigTemplate_0dbb973f4dcd7824c9f5411ed750960286c6901801306ad79413ed1cce005def extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -40,7 +40,7 @@ class __TwigTemplate_0dbb973f4dcd7824c9f5411ed750960286c6901801306ad79413ed1cce0
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:ChangePassword:change_password_content.html.twig";
+        return "UserBundle:ChangePassword:change_password_content.html.twig";
     }
 
     public function isTraitable()
@@ -63,6 +63,6 @@ class __TwigTemplate_0dbb973f4dcd7824c9f5411ed750960286c6901801306ad79413ed1cce0
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:ChangePassword:change_password_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/ChangePassword/change_password_content.html.twig");
+        return new Twig_Source("", "UserBundle:ChangePassword:change_password_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/ChangePassword/change_password_content.html.twig");
     }
 }

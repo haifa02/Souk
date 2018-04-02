@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Registration:confirmed.html.twig */
+/* UserBundle:Registration:confirmed.html.twig */
 class __TwigTemplate_6721220f58f3bffd64b671b8016cd2fc0c76f6b81eaeb7460a830a31175f09f2 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_6721220f58f3bffd64b671b8016cd2fc0c76f6b81eaeb7460a830a31175
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("UserBundle::layout.html.twig", "FOSUserBundle:Registration:confirmed.html.twig", 1);
+        $this->parent = $this->loadTemplate("FrontBundle::layout.html.twig", "UserBundle:Registration:confirmed.html.twig", 1);
         $this->blocks = array(
             'formulaire' => array($this, 'block_formulaire'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_6721220f58f3bffd64b671b8016cd2fc0c76f6b81eaeb7460a830a31175
 
     protected function doGetParent(array $context)
     {
-        return "UserBundle::layout.html.twig";
+        return "FrontBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -46,7 +46,7 @@ class __TwigTemplate_6721220f58f3bffd64b671b8016cd2fc0c76f6b81eaeb7460a830a31175
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:confirmed.html.twig";
+        return "UserBundle:Registration:confirmed.html.twig";
     }
 
     public function isTraitable()
@@ -69,6 +69,6 @@ class __TwigTemplate_6721220f58f3bffd64b671b8016cd2fc0c76f6b81eaeb7460a830a31175
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Registration:confirmed.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/confirmed.html.twig");
+        return new Twig_Source("", "UserBundle:Registration:confirmed.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/confirmed.html.twig");
     }
 }

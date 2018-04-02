@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Registration:register_content.html.twig */
+/* UserBundle:Registration:register_content.html.twig */
 class __TwigTemplate_1bfa045ac58cbcdec3c0f4b9e01645ba1d8ffcc9d42d960799e558baa9337a64 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -40,7 +40,7 @@ class __TwigTemplate_1bfa045ac58cbcdec3c0f4b9e01645ba1d8ffcc9d42d960799e558baa93
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:register_content.html.twig";
+        return "UserBundle:Registration:register_content.html.twig";
     }
 
     public function isTraitable()
@@ -63,6 +63,6 @@ class __TwigTemplate_1bfa045ac58cbcdec3c0f4b9e01645ba1d8ffcc9d42d960799e558baa93
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Registration:register_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/register_content.html.twig");
+        return new Twig_Source("", "UserBundle:Registration:register_content.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Registration/register_content.html.twig");
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-/* @FOSUser/layout.html.twig */
+/* UserBundle::layout.html.twig */
 class __TwigTemplate_e4dcaadd494e130db8b75e2f3c77ae55ef5c15410ba93d93db1306ee2beb89f6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -60,22 +60,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/front/css/magnific-popup.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\">
 
-
-    <script>
-        \$(document).ready(function() {
-            \$('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
-                fixedContentPos: false,
-                fixedBgPos: true,
-                overflowY: 'auto',
-                closeBtnInside: true,
-                preloader: false,
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-        });
-    </script>
 </head>
 <body>
 <div class=\"header\">
@@ -87,24 +71,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class=\"header_right\">
                 <div>
                     ";
-        // line 49
+        // line 33
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
-            // line 50
+            // line 34
             echo "                        ";
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("layout.logged_in_as", array("%username%" => $this->getAttribute($this->getAttribute(($context["app"] ?? null), "user", array()), "username", array())), "FOSUserBundle"), "html", null, true);
             echo " |
                         <a href=\"";
-            // line 51
+            // line 35
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
             echo "\">
                             ";
-            // line 52
+            // line 36
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("layout.logout", array(), "FOSUserBundle"), "html", null, true);
             echo "
                         </a>
                     ";
         } else {
-            // line 55
+            // line 39
             echo "                        <a href=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_login");
             echo "\">";
@@ -112,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             echo "</a>
                     ";
         }
-        // line 57
+        // line 41
         echo "                </div>
                 <div class=\"lang_list\">
 
@@ -145,9 +129,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <div class=\"col-md-10 box-form\">
                     ";
-        // line 88
+        // line 72
         $this->displayBlock('formulaire', $context, $blocks);
-        // line 90
+        // line 74
         echo "                </div>
 
             </div>
@@ -170,16 +154,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ";
     }
 
-    // line 88
+    // line 72
     public function block_formulaire($context, array $blocks = array())
     {
-        // line 89
+        // line 73
         echo "                    ";
     }
 
     public function getTemplateName()
     {
-        return "@FOSUser/layout.html.twig";
+        return "UserBundle::layout.html.twig";
     }
 
     public function isTraitable()
@@ -189,7 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     public function getDebugInfo()
     {
-        return array (  177 => 89,  174 => 88,  151 => 90,  149 => 88,  116 => 57,  108 => 55,  102 => 52,  98 => 51,  93 => 50,  91 => 49,  60 => 21,  56 => 20,  51 => 18,  45 => 15,  40 => 13,  36 => 12,  31 => 10,  20 => 1,);
+        return array (  161 => 73,  158 => 72,  135 => 74,  133 => 72,  100 => 41,  92 => 39,  86 => 36,  82 => 35,  77 => 34,  75 => 33,  60 => 21,  56 => 20,  51 => 18,  45 => 15,  40 => 13,  36 => 12,  31 => 10,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -202,6 +186,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "@FOSUser/layout.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/layout.html.twig");
+        return new Twig_Source("", "UserBundle::layout.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/layout.html.twig");
     }
 }

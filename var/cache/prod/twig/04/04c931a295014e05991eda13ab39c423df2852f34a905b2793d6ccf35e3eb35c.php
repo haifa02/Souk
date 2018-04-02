@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href=\"";
             // line 45
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_show");
-            echo "\">Profil</a>
+            echo "\"><i class=\"fa fa-address-card-o\"></i>  Profil</a>
 
                             </li>
                             <li >

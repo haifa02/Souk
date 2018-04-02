@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Group:show.html.twig */
+/* UserBundle:Group:show.html.twig */
 class __TwigTemplate_dfa474e5ff5dfc73a38350ebda92f41aaea28f78b59cdee7d5ba3058da1b3690 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_dfa474e5ff5dfc73a38350ebda92f41aaea28f78b59cdee7d5ba3058da1
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Group:show.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "UserBundle:Group:show.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -28,12 +28,12 @@ class __TwigTemplate_dfa474e5ff5dfc73a38350ebda92f41aaea28f78b59cdee7d5ba3058da1
     public function block_fos_user_content($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("@FOSUser/Group/show_content.html.twig", "FOSUserBundle:Group:show.html.twig", 4)->display($context);
+        $this->loadTemplate("@FOSUser/Group/show_content.html.twig", "UserBundle:Group:show.html.twig", 4)->display($context);
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Group:show.html.twig";
+        return "UserBundle:Group:show.html.twig";
     }
 
     public function isTraitable()
@@ -56,6 +56,6 @@ class __TwigTemplate_dfa474e5ff5dfc73a38350ebda92f41aaea28f78b59cdee7d5ba3058da1
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Group:show.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Group/show.html.twig");
+        return new Twig_Source("", "UserBundle:Group:show.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Group/show.html.twig");
     }
 }

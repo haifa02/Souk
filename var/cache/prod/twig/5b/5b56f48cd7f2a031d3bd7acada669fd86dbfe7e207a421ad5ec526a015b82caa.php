@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Profile:edit.html.twig */
+/* UserBundle:Profile:edit.html.twig */
 class __TwigTemplate_bee18296e1d314a35fc48c23a4db15d108ffe30c531af98a5083803b53c3d642 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_bee18296e1d314a35fc48c23a4db15d108ffe30c531af98a5083803b53c
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Profile:edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "UserBundle:Profile:edit.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -28,12 +28,12 @@ class __TwigTemplate_bee18296e1d314a35fc48c23a4db15d108ffe30c531af98a5083803b53c
     public function block_fos_user_content($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("@FOSUser/Profile/edit_content.html.twig", "FOSUserBundle:Profile:edit.html.twig", 4)->display($context);
+        $this->loadTemplate("@FOSUser/Profile/edit_content.html.twig", "UserBundle:Profile:edit.html.twig", 4)->display($context);
     }
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Profile:edit.html.twig";
+        return "UserBundle:Profile:edit.html.twig";
     }
 
     public function isTraitable()
@@ -56,6 +56,6 @@ class __TwigTemplate_bee18296e1d314a35fc48c23a4db15d108ffe30c531af98a5083803b53c
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "FOSUserBundle:Profile:edit.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Profile/edit.html.twig");
+        return new Twig_Source("", "UserBundle:Profile:edit.html.twig", "/opt/lampp/htdocs/dev/souk/src/Souk/UserBundle/Resources/views/Profile/edit.html.twig");
     }
 }
