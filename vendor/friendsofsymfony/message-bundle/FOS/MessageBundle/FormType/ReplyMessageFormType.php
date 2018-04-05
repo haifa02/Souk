@@ -18,7 +18,9 @@ class ReplyMessageFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('body', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\TextareaType'), array(
+            ->add('body', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\TextareaType'),array('attr'  =>  array(
+            'class' => 'form-control',
+            'style' => 'margin:5px 0;')), array(
                 'label' => 'Message',
                 'translation_domain' => 'FOSMessageBundle',
             ));

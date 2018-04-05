@@ -75,10 +75,11 @@ class MessageController implements ContainerAwareInterface
                 'threadId' => $message->getThread()->getId(),
             )));
         }
-
+        $threads = $this->getProvider()->getInboxThreads();
         return $this->container->get('templating')->renderResponse('FOSMessageBundle:Message:thread.html.twig', array(
             'form' => $form->createView(),
             'thread' => $thread,
+            'threads' => $threads,
         ));
     }
 
@@ -114,6 +115,7 @@ class MessageController implements ContainerAwareInterface
      */
     public function deleteAction($threadId)
     {
+        
         $thread = $this->getProvider()->getThread($threadId);
         $this->container->get('fos_message.deleter')->markAsDeleted($thread);
         $this->container->get('fos_message.thread_manager')->saveThread($thread);
